@@ -103,8 +103,10 @@ Feature	VirtualBox (by Oracle)	VMware Workstation Player (by VMware)
 
 🔶 Let’s walk through the exact steps to download and install VirtualBox, including the correct files to get you started safely and smoothly.
 
-✅ Step-by-Step: Download & Install VirtualBox
-1️⃣ Go to the Official VirtualBox Site
+✅ Step-by-Step: Download & Install VirtualBox </br>
+
+1️⃣ Go to the Official VirtualBox Site</br>
+
 👉 https://www.virtualbox.org/wiki/Downloads
 
 🟢 You’ll see a section called "VirtualBox platform packages" — this is where you get the main program.
