@@ -168,7 +168,8 @@ Click this:
 🧪 Final Check
 You should now see the VirtualBox Manager window open and ready like this:
 
-```+---------------------------------------+
+```
++---------------------------------------+
 | VirtualBox Manager                    |
 |---------------------------------------|
 | [ New ] [ Settings ] [ Start ]        |
