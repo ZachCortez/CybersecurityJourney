@@ -14,11 +14,11 @@ Whether you're a beginner like me or someone looking to break into tech without 
 
 ## 👇 Table of Contents
 
-- [🛠️ Step 1: Build a Hands-On IT Lab at Home](#-step-1-build-a-hands-on-it-lab-at-home-no-extra-cost)
-- [🧰 IT Home Lab Setup](#-your-it-home-lab-setup)
-- [🎯 Hands-On Goal Mapping (A+ Domains)](#hands-on-goals-core-a--help-desk-topics)
-- [🥊 VirtualBox vs VMware Workstation Player](#-virtualbox-vs-vmware-workstation-player)
-- [✅ VirtualBox Installation Guide](#-step-by-step-download--install-virtualbox)
+- [🛠️ Step 1: Build a Hands-On IT Lab at Home](#step-1-build-a-hands-on-it-lab-at-home-no-extra-cost)
+- [🧰 IT Home Lab Setup](#your-it-home-lab-setup)
+- [🎯 Hands-On Goal Mapping (A+ Domains)](#hands-on-goals-core-a-help-desk-topics)
+- [🥊 VirtualBox vs VMware Workstation Player](#virtualbox-vs-vmware-workstation-player)
+- [✅ VirtualBox Installation Guide](#step-by-step-download--install-virtualbox)
 
 ---
 
@@ -38,11 +38,11 @@ You already have a laptop — that’s all you need to start:
 
 ✅ Download and install:
 
-Windows 10 ISO
+🔸 Windows 10 ISO
 
-Ubuntu (Linux) ISO
+🔸 Ubuntu (Linux) ISO
 
-Optionally, Kali Linux (for security practice later)
+🔸 Optionally, Kali Linux (for security practice later)
 
 Hands-on Goals (Core A+ & Help Desk Topics):
 | Task                                                | What It Teaches                  | Core            |
@@ -77,37 +77,37 @@ Feature	VirtualBox (by Oracle)	VMware Workstation Player (by VMware)
 
 ✅ Use VirtualBox if...
 
-You want snapshots (super useful for practicing break/fix)
+🔹 You want snapshots (super useful for practicing break/fix)
 
-You want to spin up multiple OSes, including macOS (eventually)
+🔹 You want to spin up multiple OSes, including macOS (eventually)
 
-You prefer open-source tools
+🔹 You prefer open-source tools
 
-You want more flexibility for a DIY home lab setup
+🔹 You want more flexibility for a DIY home lab setup
 
 ✅ Use VMware Workstation Player if...
 
-You want better performance/stability out of the box
+🔹 You want better performance/stability out of the box
 
-You're only running Windows or Linux guests
+🔹 You're only running Windows or Linux guests
 
-You don’t need snapshots or advanced lab features
+🔹 You don’t need snapshots or advanced lab features
 
 🏁 My Recommendation for You:
 
 ✅ Go with VirtualBox — it’s more flexible for lab work, totally free, and widely used in IT training.
 
-You can always try VMware later if you want a more “commercial” experience.
+ - You can always try VMware later if you want a more “commercial” experience.
 
 </br>
 
-let’s walk through the exact steps to download and install VirtualBox, including the correct files to get you started safely and smoothly.
+🔶 Let’s walk through the exact steps to download and install VirtualBox, including the correct files to get you started safely and smoothly.
 
 ✅ Step-by-Step: Download & Install VirtualBox
 1️⃣ Go to the Official VirtualBox Site
 👉 https://www.virtualbox.org/wiki/Downloads
 
-You’ll see a section called "VirtualBox platform packages" — this is where you get the main program.
+🟢 You’ll see a section called "VirtualBox platform packages" — this is where you get the main program.
 
 2️⃣ Download for Your System
 
@@ -115,8 +115,8 @@ Since you’re on Windows, click:
 
 🔵 Windows hosts
 
-This will download a file like:
-VirtualBox-7.x.x-yyyy-Win.exe
+🟢 This will download a file like:
+```VirtualBox-7.x.x-yyyy-Win.exe```
 
 ✅ Save it somewhere easy to find (like your Desktop or Downloads folder).
 
@@ -129,17 +129,17 @@ Click this:
 
 🔗``` All supported platforms```
 
-- This gives you extra features like:
+🔸 This gives you extra features like:
 
-- USB 2.0/3.0 device support
+🔸 USB 2.0/3.0 device support
 
-- VirtualBox RDP (Remote Desktop)
+🔸 VirtualBox RDP (Remote Desktop)
 
-- Host webcam passthrough
+🔸 Host webcam passthrough
 
-- Encryption (for future practice)
+🔸 Encryption (for future practice)
 
-It’ll download a file like:
+🟢 It’ll download a file like:
 ```Oracle_VM_VirtualBox_Extension_Pack-7.x.x.vbox-extpack```
 
 🖥️ Install VirtualBox
