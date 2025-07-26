@@ -505,6 +505,179 @@ Here are a few tools you’ll explore later:
 
 Kali is powerful. Never run attacks on networks or devices you don’t own or have permission to test — use **your own VMs**, lab environments, or tools like TryHackMe/HackTheBox for legal practice.
 
+</hr>
+## 🚀 Up Next: Create file shares between VMs
+
 ---
+Creating **file shares between VMs** is essential for learning networking, permissions, and cross-OS file handling — all core skills for **CompTIA A+**, help desk roles, and cybersecurity.
+
+Let’s walk through how to **set up file sharing between a Windows VM and a Linux VM (like Ubuntu)** using VirtualBox’s **host-only network** and **Samba** file sharing.
+
+---
+
+## 🧱 Prerequisites
+
+You should already have:
+
+* ✅ Windows 10 VM installed in VirtualBox
+* ✅ Ubuntu VM installed in VirtualBox
+* ✅ VirtualBox Guest Additions installed on both VMs (for copy/paste and drivers)
+
+---
+
+## 🛜 Step 1: Set Both VMs on the Same Virtual Network
+
+1. **Shutdown both VMs**
+2. Open **VirtualBox Manager**
+3. For both VMs:
+
+   * Right-click > **Settings** > **Network**
+   * **Adapter 1**:
+
+     * Enable Network Adapter: ✅
+     * Attached to: **Host-only Adapter**
+     * Name: `vboxnet0` (or whatever VirtualBox auto-created)
+4. Click OK to save
+
+---
+
+## 🌐 Step 2: Start the VMs and Confirm They See Each Other
+
+### On Ubuntu VM:
+
+```bash
+ip a | grep inet
+```
+
+You’ll see something like `192.168.56.101`
+
+### On Windows VM:
+
+1. Open Command Prompt:
+
+```cmd
+ipconfig
+```
+
+You’ll see something like `192.168.56.102`
+
+🟢 Try to **ping** each machine from the other to test the connection.
+
+From Ubuntu:
+
+```bash
+ping 192.168.56.102
+```
+
+From Windows:
+
+```cmd
+ping 192.168.56.101
+```
+
+---
+
+## 🧰 Step 3: Share a Folder from Ubuntu to Windows Using Samba
+
+### On Ubuntu:
+
+1. Install Samba:
+
+```bash
+sudo apt update
+sudo apt install samba -y
+```
+
+2. Create a folder to share:
+
+```bash
+mkdir ~/shared-folder
+```
+
+3. Set permissions:
+
+```bash
+chmod 777 ~/shared-folder
+```
+
+4. Edit Samba config:
+
+```bash
+sudo nano /etc/samba/smb.conf
+```
+
+Scroll to the bottom and add:
+
+```ini
+[SharedFolder]
+   path = /home/your-username/shared-folder
+   browseable = yes
+   read only = no
+   guest ok = yes
+```
+
+Replace `your-username` with your actual Ubuntu username.
+
+5. Restart Samba:
+
+```bash
+sudo systemctl restart smbd
+```
+
+6. Allow Samba through the firewall (optional):
+
+```bash
+sudo ufw allow samba
+```
+
+---
+
+## 💻 Step 4: Access Ubuntu Share from Windows
+
+1. On Windows, open File Explorer
+2. In the address bar, enter:
+
+```
+\\192.168.56.101\SharedFolder
+```
+
+(Use the actual IP of your Ubuntu VM)
+
+3. If prompted for login:
+
+   * Username: **guest**
+   * Leave password blank
+
+✅ You should now see and access the shared folder!
+
+---
+
+## 📓 Document This in Your GitHub Lab Journal
+
+````markdown
+### 🔗 Lab: File Sharing Between Ubuntu and Windows VMs
+
+**What I Learned:**
+- Networking between VMs using Host-only Adapter
+- File sharing using Samba from Ubuntu to Windows
+- Configuring permissions and SMB shares
+- Using IP tools (`ip a`, `ping`, `ipconfig`)
+
+**Commands Used:**
+```bash
+sudo apt install samba
+mkdir ~/shared-folder
+chmod 777 ~/shared-folder
+sudo nano /etc/samba/smb.conf
+sudo systemctl restart smbd
+````
+
+**Troubleshooting Notes:**
+
+* Confirm both VMs are on the same subnet
+* Use correct path in `smb.conf`
+* Check firewall settings if Windows can't connect
+
+
 
 
