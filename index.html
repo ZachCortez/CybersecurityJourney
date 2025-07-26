@@ -4,37 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Zach's Cybersecurity Journey</title>
+
+  <!-- Tailwind CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+
+  <!-- Orbitron Font for Futuristic Look -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+
   <style>
-  body {
-    background-color: #0d1117;
-  }
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Orbitron', sans-serif;
+      position: relative;
+      overflow-x: hidden;
+    }
 
-  .glow-border {
-    border: 1px solid #0ff;
-    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff2, 0 0 30px #0ff4;
-  }
+    /* Glowing border effect */
+    .glow-border {
+      border: 1px solid #0ff;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff2, 0 0 30px #0ff4;
+      animation: pulseGlow 3s ease-in-out infinite;
+    }
 
-  .glow-text {
-    text-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
-  }
+    @keyframes pulseGlow {
+      0%, 100% {
+        box-shadow: 0 0 10px #0ff, 0 0 20px #0ff2, 0 0 30px #0ff4;
+      }
+      50% {
+        box-shadow: 0 0 12px #0ff, 0 0 24px #0ff, 0 0 36px #0ff6;
+      }
+    }
 
-  a.glow-link {
-    transition: all 0.3s ease;
-  }
+    /* Glowing text */
+    .glow-text {
+      text-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
+    }
 
-  a.glow-link:hover {
-    background-color: #0ff;
-    color: #111;
-    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
-  }
-</style>
+    /* Link hover glow */
+    a.glow-link {
+      transition: all 0.3s ease;
+    }
 
+    a.glow-link:hover {
+      background-color: #0ff;
+      color: #0d1117;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+
+    /* Floating animation */
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+
+    /* Scanline overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.02),
+        rgba(255, 255, 255, 0.02) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+      z-index: 0;
+      pointer-events: none;
+      animation: scan 6s linear infinite;
+    }
+
+    @keyframes scan {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(100%);
+      }
+    }
+
+    /* Add subtle glowing divider */
+    .glow-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #0ff, transparent);
+      opacity: 0.3;
+      margin: 2rem 0;
+    }
+  </style>
 </head>
-<body class="text-gray-100 font-sans leading-normal tracking-normal">
-  <div class="max-w-4xl mx-auto p-6 border border-teal-400 glow-border rounded-lg">
+
+<body class="leading-normal tracking-normal text-gray-100 z-10 relative">
+  <div class="max-w-4xl mx-auto p-6 glow-border rounded-lg backdrop-blur-sm z-10 relative">
     <header class="mb-12 text-center">
-      <h1 class="text-4xl font-bold mb-4 text-teal-400 glow-text">🔐 Zach's Cybersecurity Journey</h1>
+      <h1 class="text-4xl font-bold mb-4 text-teal-400 glow-text floating">🔐 Zach's Cybersecurity Journey</h1>
       <p class="text-lg text-gray-300">
         A hands-on path to CompTIA A+, Help Desk roles, and Cybersecurity.
       </p>
@@ -42,6 +111,8 @@
         View on GitHub →
       </a>
     </header>
+
+    <div class="glow-divider"></div>
 
     <section class="space-y-8">
       <div>
