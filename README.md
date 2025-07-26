@@ -300,5 +300,112 @@ You’ll now enter the Windows installation process — just like installing on 
 ---
 
 ## 🚀 Up Next: Install Ubuntu ISO
+</hr>
+ Let’s set up **Ubuntu Linux** next — it’s essential for both the CompTIA A+ and IT Help Desk practice, plus it'll help you get comfortable with Linux fundamentals (which are key for cybersecurity later).
 
+---
+
+## ✅ Step 1: Download Ubuntu ISO
+
+### 🔗 Go to the official Ubuntu site:
+
+👉 [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop)
+
+### ✅ Choose:
+
+> **Ubuntu 22.04.4 LTS** (Long Term Support – recommended for stability)
+
+Click:
+
+> **Download**
+
+This will download a file like:
+
+```
+ubuntu-22.04.4-desktop-amd64.iso
+```
+
+Once downloaded, you’re ready to create the VM.
+
+---
+
+## ✅ Step 2: Create an Ubuntu VM in VirtualBox
+
+1. Open **VirtualBox**, then click:
+
+   > **New**
+
+2. Name: `Ubuntu 22.04`
+
+   * Type: `Linux`
+   * Version: `Ubuntu (64-bit)`
+
+3. Click **Next**
+
+4. Memory Size:
+
+   * Recommend **4096 MB (4 GB)** if you can
+   * Minimum: **2048 MB**
+
+5. Click **Next**
+
+6. Create Virtual Hard Disk:
+
+   * Choose: ✅ **Create a virtual hard disk now**
+   * Disk type: `VDI`
+   * Storage: `Dynamically allocated`
+   * Size: **32 GB or more** recommended
+
+7. Click **Create**
+
+---
+
+## ✅ Step 3: Mount the ISO and Boot the VM
+
+1. Select your new **Ubuntu** VM
+
+2. Click **Start**
+
+3. You'll be prompted to select a startup disk:
+
+   * Click the 📂 folder and select:
+
+     ```
+     ubuntu-22.04.4-desktop-amd64.iso
+     ```
+
+4. Click **Start**
+
+---
+
+## 🛠 Step 4: Install Ubuntu
+
+When it boots up:
+
+1. Click **Install Ubuntu**
+2. Choose your language and keyboard layout
+3. On “Updates and Other Software”:
+
+   * Choose: ✅ **Normal Installation**
+   * Check both boxes: **Download updates** + **Install 3rd party drivers**
+4. For installation type:
+
+   * Choose: ✅ **Erase disk and install Ubuntu** (only applies to the VM's virtual disk, not your real system — you're safe!)
+5. Click **Continue**
+6. Set your user account details and password
+7. Let the installation finish (\~5–10 min)
+
+Once done, it’ll ask to restart — let it reboot and **remove the ISO** if prompted.
+
+---
+
+### 🎉 You’re Done!
+
+You now have:
+✅ **Windows 10 VM**
+✅ **Ubuntu Linux VM**
+
+This gives you two systems to test networking between, practice installs, troubleshoot, and simulate real-world help desk tasks.
+
+---
 
