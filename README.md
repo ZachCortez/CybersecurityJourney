@@ -678,6 +678,120 @@ sudo systemctl restart smbd
 * Use correct path in `smb.conf`
 * Check firewall settings if Windows can't connect
 
+Let’s do it! 🔄 This time we’ll **share a folder from your Windows VM** and **access it from your Ubuntu VM** — a perfect way to learn real-world help desk troubleshooting and cross-OS networking.
+
+---
+
+## 📤 Step-by-Step: Share a Folder from Windows to Ubuntu
+
+### ✅ Step 1: Create and Share the Folder in Windows
+
+1. On your **Windows VM**:
+
+   * Create a folder on your Desktop or C:\ (e.g., `SharedFromWindows`)
+   * Right-click the folder > **Properties**
+   * Go to the **Sharing** tab > click **Advanced Sharing**
+   * ✅ Check **Share this folder**
+   * Name it something like: `WinShare`
+   * Click **Permissions**, and:
+
+     * Select **Everyone**
+     * ✅ Allow **Read/Write**
+   * Click OK > OK > Close
+
+2. Get your Windows VM's IP address:
+
+   ```cmd
+   ipconfig
+   ```
+
+   Look for something like `192.168.56.x`
+
+---
+
+### 🧷 Step 2: Access the Windows Share from Ubuntu
+
+1. On your **Ubuntu VM**, install CIFS utils (for SMB support):
+
+   ```bash
+   sudo apt update
+   sudo apt install cifs-utils -y
+   ```
+
+2. Create a mount point (where you’ll access the share):
+
+   ```bash
+   mkdir ~/winshare
+   ```
+
+3. Mount the Windows share:
+
+   ```bash
+   sudo mount -t cifs //192.168.56.x/WinShare ~/winshare -o user=YourWindowsUsername
+   ```
+
+   * Replace `192.168.56.x` with your Windows IP.
+   * Replace `YourWindowsUsername` with your Windows login username.
+   * Enter your password when prompted.
+
+✅ You should now see the **Windows folder's contents** inside `~/winshare` on Ubuntu!
+
+---
+
+## 📌 Optional: Mount the Share Automatically on Boot
+
+1. Edit the fstab file:
+
+   ```bash
+   sudo nano /etc/fstab
+   ```
+
+2. Add this line at the bottom:
+
+   ```
+   //192.168.56.x/WinShare  /home/yourname/winshare  cifs  username=YourWindowsUsername,password=YourPassword,uid=1000,gid=1000,iocharset=utf8  0  0
+   ```
+
+   * Replace paths, IP, and credentials accordingly.
+   * Save and exit (`CTRL+O`, then `CTRL+X`)
+
+3. Test it:
+
+   ```bash
+   sudo umount ~/winshare
+   sudo mount -a
+   ```
+
+🟢 If no errors, the mount works!
+
+---
+
+## 📝 Lab Journal Entry Example
+
+````markdown
+### 🔁 Lab: Sharing Files from Windows VM to Ubuntu
+
+**What I Did:**
+- Created a shared folder on Windows using advanced sharing
+- Used CIFS to mount the share on Ubuntu
+- Tested connectivity and access
+- Learned basic `fstab` entry setup for persistent mounts
+
+**Key Commands:**
+```bash
+sudo apt install cifs-utils
+mkdir ~/winshare
+sudo mount -t cifs //192.168.56.102/WinShare ~/winshare -o user=zach
+````
+
+**Troubleshooting:**
+
+* 🧱 Make sure both VMs are on the same VirtualBox network
+* 🛑 Disable Windows Firewall if Ubuntu can’t reach the share
+* 🔐 If you get permissions errors, check Windows sharing settings
+
+</hr>
+
 
 
 
