@@ -1,6 +1,6 @@
 # 🧠 Zach's IT Home Lab Journey — A+ Certification & Help Desk Practice
 
-Welcome to my personal IT home lab repository!
+## Welcome to my personal IT home lab repository!
 
 This is a living, hands-on project where I document my journey toward earning the **CompTIA A+ certification**, building foundational IT skills, and landing a **remote Help Desk or IT Support role**.
 
@@ -28,7 +28,7 @@ Feel free to follow along, fork the repo, or reach out if you're on a similar pa
 
 
 
-🛠️ Step 1: Build a Hands-On IT Lab at Home (No Extra Cost)
+## 🛠️ Step 1: Build a Hands-On IT Lab at Home (No Extra Cost)
 This is your playground to experiment, break stuff, fix it, and document the whole process.
 
 🧰 Your IT Home Lab Setup
@@ -57,7 +57,7 @@ Hands-on Goals (Core A+ & Help Desk Topics):
 
 
 
-🥊 VirtualBox vs VMware Workstation Player
+## 🥊 VirtualBox vs VMware Workstation Player
 
 Feature	VirtualBox (by Oracle)	VMware Workstation Player (by VMware)
 | Feature                      | **VirtualBox** (by Oracle)                      | **VMware Workstation Player** (by VMware)         |
@@ -73,7 +73,7 @@ Feature	VirtualBox (by Oracle)	VMware Workstation Player (by VMware)
 | 💾 File sharing (host/guest) | Easy with Guest Additions                       | Easy with VMware Tools                            |
 
 
-🔍 Which One Should You Use?
+## 🔍 Which One Should You Use?
 
 ✅ Use VirtualBox if...
 
@@ -101,7 +101,7 @@ Feature	VirtualBox (by Oracle)	VMware Workstation Player (by VMware)
 
 </br>
 
-🔶 Let’s walk through the exact steps to download and install VirtualBox, including the correct files to get you started safely and smoothly.
+## 🔶 Let’s walk through the exact steps to download and install VirtualBox, including the correct files to get you started safely and smoothly.
 
 ✅ Step-by-Step: Download & Install VirtualBox </br>
 
@@ -122,7 +122,7 @@ Since you’re on Windows, click:
 
 ✅ Save it somewhere easy to find (like your Desktop or Downloads folder).
 
-3️⃣ Optional but Recommended: Extension Pack
+## 3️⃣ Optional but Recommended: Extension Pack
 Still on that same page, scroll down to:
 
 📦 VirtualBox Extension Pack
@@ -144,7 +144,7 @@ Click this:
 🟢 It’ll download a file like:
 ```Oracle_VM_VirtualBox_Extension_Pack-7.x.x.vbox-extpack```
 
-🖥️ Install VirtualBox
+## 🖥️ Install VirtualBox
 
 1. Run the downloaded ```.exe``` file.
 
@@ -156,7 +156,7 @@ Click this:
 
 5. Click Finish and VirtualBox will open.
 
-🔌 Install the Extension Pack (Optional but Recommended)
+## 🔌 Install the Extension Pack (Optional but Recommended)
 1. Open VirtualBox
 
 2. Go to: File → Tools → Extension Pack Manager
@@ -167,7 +167,7 @@ Click this:
 
 </br>
 
-🧪 Final Check
+##🧪 Final Check
 You should now see the VirtualBox Manager window open and ready like this:
 
 ```
@@ -180,3 +180,125 @@ You should now see the VirtualBox Manager window open and ready like this:
 +---------------------------------------+
 ```
 From here, you're ready to install your first virtual machine.
+
+ 🖥️ Next steps:
+
+🔹 Download Windows 10 ISO
+
+🔹 Download Ubuntu ISO
+
+Start creating VMs for practice.
+</hr></br>
+
+##Let’s get your **first virtual machines (VMs)** up and running. We’ll start with **Windows 10**, then move to **Ubuntu Linux** after.
+
+---
+
+## ✅ Step 1: Download Windows 10 ISO
+
+### 🔗 Go to the official Microsoft download page:
+
+👉 [https://www.microsoft.com/software-download/windows10](https://www.microsoft.com/software-download/windows10)
+
+### 🖱 Scroll to:
+
+> **"Create Windows 10 installation media"**
+
+Click:
+
+> **Download tool now**
+
+This gives you a file:
+
+```
+MediaCreationTool22H2.exe
+```
+
+### 📥 Run the tool:
+
+1. Accept the license agreement.
+
+2. Choose:
+
+   > ✅ **"Create installation media (USB flash drive, DVD, or ISO file)"**
+
+3. On the next screen, leave defaults (English, Windows 10, 64-bit) checked and click **Next**.
+
+4. Choose:
+
+   > ✅ **ISO file**
+
+5. Save the `.iso` file somewhere you’ll remember.
+
+💡 The tool will download and create a file like:
+
+```
+Windows10.iso
+```
+
+Once done — you're ready to install it in VirtualBox.
+
+---
+
+## ✅ Step 2: Create a Windows 10 VM in VirtualBox
+
+1. Open **VirtualBox** and click:
+
+   > **New**
+
+2. Name: `Windows 10`
+
+   * Type: `Microsoft Windows`
+   * Version: `Windows 10 (64-bit)`
+
+3. Click **Next**
+
+4. Memory Size:
+
+   * Set **4096 MB (4 GB)** if you can spare it — or **2048 MB** minimum.
+
+5. Click **Next**
+
+6. Create Virtual Hard Disk:
+   ✅ Select “Create a virtual hard disk now”
+
+   * Disk size: **64 GB** recommended
+   * File type: `VDI`
+   * Storage: `Dynamically allocated`
+
+7. Click **Create**
+
+---
+
+## ✅ Step 3: Mount the ISO & Start the VM
+
+1. Select your new VM on the left in VirtualBox
+2. Click **Start**
+3. It will prompt you to select a startup disk:
+
+   * Click the 📂 icon and browse to your downloaded `Windows10.iso`
+4. Click **Start**
+
+You’ll now enter the Windows installation process — just like installing on a real PC!
+
+---
+
+## 🛠 Installation Tips:
+
+* Choose "Custom install" if it asks for install type
+* Select the only unallocated disk shown
+* Windows will install normally — this can take a few minutes
+* You **don’t need a product key** to install — click:
+
+  > “I don’t have a product key”
+* You can skip signing in with a Microsoft account (choose offline account)
+
+---
+
+## 🎉 Done! You now have a Windows 10 VM to break, fix, and experiment in.
+
+---
+
+## 🚀 Up Next: Install Ubuntu ISO
+
+
