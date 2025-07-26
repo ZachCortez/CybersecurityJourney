@@ -407,5 +407,104 @@ You now have:
 
 This gives you two systems to test networking between, practice installs, troubleshoot, and simulate real-world help desk tasks.
 
+## 🚀 Up Next: Download Kali Linux ISO
 ---
+
+Let’s get **Kali Linux** set up! Kali is the go-to distro for penetration testing, ethical hacking, and cybersecurity labs. Setting it up in VirtualBox will give you a safe environment to start experimenting.
+
+---
+
+## ✅ Step 1: Download Kali Linux ISO
+
+### 🔗 Official download page:
+
+👉 [https://www.kali.org/get-kali/#kali-platforms](https://www.kali.org/get-kali/#kali-platforms)
+
+### Under the **Virtual Machines** tab:
+
+> 🟢 Instead of downloading a regular ISO, you can grab the **Kali Linux VirtualBox prebuilt image**, which is faster and already configured!
+
+Click:
+
+> **Kali Linux VirtualBox (64-bit)** – it’s a `.7z` file (compressed)
+
+Example file:
+
+```
+kali-linux-2024.2-virtualbox-amd64.7z
+```
+
+---
+
+## ✅ Step 2: Extract the Files
+
+After downloading the `.7z` file, you’ll need to extract it.
+
+### Use a tool like:
+
+* [7-Zip](https://www.7-zip.org/) (recommended)
+* Or WinRAR
+
+After extracting, you’ll get a folder with files like:
+
+```
+Kali-Linux-2024.2-vbox-amd64.vbox
+Kali-Linux-2024.2-vbox-amd64.vdi
+```
+
+These are **already configured** — no need to go through the normal installation process!
+
+---
+
+## ✅ Step 3: Import into VirtualBox
+
+1. Open **VirtualBox**
+
+2. Click **File → Import Appliance**
+
+3. Select the `.ova` file if you downloaded that — or if you only got `.vbox`, click:
+
+   > **Machine → Add**, and point to the `.vbox` file.
+
+4. Click **Open** → then **Finish**
+
+🎉 You’ve now got Kali Linux installed!
+
+---
+
+## 🛠 First Run Tips:
+
+* Username: `kali`
+
+* Password: `kali`
+  (You can change this later.)
+
+* After logging in, run this in Terminal to update tools:
+
+```bash
+sudo apt update && sudo apt upgrade
+```
+
+---
+
+## 🚀 What Can You Do with Kali?
+
+Here are a few tools you’ll explore later:
+
+| Tool              | Purpose                               |
+| ----------------- | ------------------------------------- |
+| `nmap`            | Network scanning                      |
+| `Wireshark`       | Packet sniffing                       |
+| `Metasploit`      | Exploitation framework                |
+| `Burp Suite`      | Web application vulnerability testing |
+| `John the Ripper` | Password cracking                     |
+
+---
+
+## ⚠️ Reminder: **Use Responsibly**
+
+Kali is powerful. Never run attacks on networks or devices you don’t own or have permission to test — use **your own VMs**, lab environments, or tools like TryHackMe/HackTheBox for legal practice.
+
+---
+
 
