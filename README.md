@@ -93,9 +93,11 @@ You can always try VMware later if you want a more “commercial” experience.
 
 ## 🔶 Step-by-Step: Download & Install VirtualBox
 
+
 1️⃣ Go to the Official VirtualBox Site:  
 👉 https://www.virtualbox.org/wiki/Downloads  
-
+![VirtualBoxInstallPart1-1](https://github.com/user-attachments/assets/1be87382-9597-4b7b-bc53-fddbe592e83b)
+</br>
 You’ll see a section called "VirtualBox platform packages" — this is where you get the main program.
 
 2️⃣ Download for Your System  
