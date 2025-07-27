@@ -132,6 +132,14 @@ All supported platforms
 ```
 
 This gives you extra features like USB 2.0/3.0 support, RDP, webcam passthrough, and encryption.  
+</br>
+
+
+https://github.com/user-attachments/assets/0b43bdd5-8fb9-4820-b75a-aaf473477b9c
+
+
+</br>
+
 
 It downloads a file like:  
 ```
