@@ -172,7 +172,13 @@ https://github.com/user-attachments/assets/87c848b5-488a-4610-85e5-8ad600cbce71
 2. Go to **File → Tools → Extension Pack Manager**  
 3. Click the 📂 add icon, find the `.vbox-extpack` file  
 4. Follow prompts to install
+</br>
 
+
+https://github.com/user-attachments/assets/58f19521-159b-4b87-b084-fb4a7c062128
+
+
+</br>
 ---
 
 ## 🧪 Final Check  
