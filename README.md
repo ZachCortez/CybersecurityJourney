@@ -24,7 +24,7 @@ Whether you're a beginner like me or someone looking to break into tech without 
 
 > 🔁 This repo will be updated as I move through topics, complete labs, and learn new skills. Everything is broken, fixed, and tested on a real system — no simulations here.
 
-Feel free to follow along, fork the repo, or reach out if you're on a similar path.
+Feel free to follow along, or reach out if you're on a similar path.
 
 ---
 
