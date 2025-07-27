@@ -96,13 +96,20 @@ You can always try VMware later if you want a more “commercial” experience.
 
 1️⃣ Go to the Official VirtualBox Site:  
 👉 https://www.virtualbox.org/wiki/Downloads  
-![VirtualBoxInstallPart1-1](https://github.com/user-attachments/assets/1be87382-9597-4b7b-bc53-fddbe592e83b)
-</br>
+
 You’ll see a section called "VirtualBox platform packages" — this is where you get the main program.
 
 2️⃣ Download for Your System  
 Since you’re on Windows, click:  
-🔵 Windows hosts  
+
+🔵 Windows hosts
+</br>
+
+
+https://github.com/user-attachments/assets/6673593d-6af8-460a-a81a-3d0979044462
+
+
+</br>
 
 This downloads a file like:  
 ```
@@ -142,7 +149,13 @@ Oracle\_VM\_VirtualBox\_Extension\_Pack-7.x.x.vbox-extpack
 3. If you see a message about temporary internet disconnection, it's normal (virtual network adapter installs).  
 4. Click Install and wait.  
 5. Click Finish — VirtualBox will open.
+</br>
 
+
+https://github.com/user-attachments/assets/87c848b5-488a-4610-85e5-8ad600cbce71
+
+
+</br>
 ---
 
 ## 🔌 Install the Extension Pack (Optional but Recommended)
