@@ -205,7 +205,13 @@ From here, you're ready to install your first virtual machine.
 
 Go to the official Microsoft download page:  
 👉 [https://www.microsoft.com/software-download/windows10](https://www.microsoft.com/software-download/windows10)  
+</br>
 
+
+https://github.com/user-attachments/assets/f495f570-473a-40f6-875b-290a9e4c62f7
+
+
+</br>
 Scroll to:  
 **"Create Windows 10 installation media"** and click **Download tool now**.  
 
@@ -214,7 +220,17 @@ Run the tool:
 - Choose **Create installation media (USB flash drive, DVD, or ISO file)**  
 - Select defaults (English, Windows 10, 64-bit)  
 - Choose **ISO file** and save it.
+</br>
 
+
+
+
+https://github.com/user-attachments/assets/b773997d-7ba3-48ac-a4c5-15aa9a3250e8
+
+
+
+
+</br>
 ---
 
 ## ✅ Step 2: Create a Windows 10 VM in VirtualBox
