@@ -1,162 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zach's Cybersecurity Journey</title>
-
-  <!-- Tailwind CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-
-  <!-- Orbitron Font for Futuristic Look -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
-
-  <style>
-    body {
-      background-color: #0d1117;
-      color: #c9d1d9;
-      font-family: 'Orbitron', sans-serif;
-      position: relative;
-      overflow-x: hidden;
-    }
-
-    /* Glowing border effect */
-    .glow-border {
-      border: 1px solid #0ff;
-      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff2, 0 0 30px #0ff4;
-      animation: pulseGlow 3s ease-in-out infinite;
-    }
-
-    @keyframes pulseGlow {
-      0%, 100% {
-        box-shadow: 0 0 10px #0ff, 0 0 20px #0ff2, 0 0 30px #0ff4;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zach's IT Lab Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #0d1117;
       }
-      50% {
-        box-shadow: 0 0 12px #0ff, 0 0 24px #0ff, 0 0 36px #0ff6;
+
+      .glow-border {
+        border: 2px solid #00ffcc;
+        box-shadow: 0 0 15px #00ffcc;
       }
-    }
 
-    /* Glowing text */
-    .glow-text {
-      text-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
-    }
-
-    /* Link hover glow */
-    a.glow-link {
-      transition: all 0.3s ease;
-    }
-
-    a.glow-link:hover {
-      background-color: #0ff;
-      color: #0d1117;
-      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
-    }
-
-    /* Floating animation */
-    .floating {
-      animation: float 3s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-4px); }
-    }
-
-    /* Scanline overlay */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      background: repeating-linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.02),
-        rgba(255, 255, 255, 0.02) 1px,
-        transparent 1px,
-        transparent 3px
-      );
-      z-index: 0;
-      pointer-events: none;
-      animation: scan 6s linear infinite;
-    }
-
-    @keyframes scan {
-      0% {
-        transform: translateY(-100%);
+      ::selection {
+        background-color: #00ffcc;
+        color: #0d1117;
       }
-      100% {
-        transform: translateY(100%);
+
+      pre, code {
+        white-space: pre-wrap;
+        word-wrap: break-word;
       }
-    }
+    </style>
+  </head>
+  <body class="flex flex-col items-center justify-center min-h-screen text-gray-100 px-4 py-8">
 
-    /* Add subtle glowing divider */
-    .glow-divider {
-      height: 1px;
-      background: linear-gradient(to right, transparent, #0ff, transparent);
-      opacity: 0.3;
-      margin: 2rem 0;
-    }
-  </style>
-</head>
-
-<body class="flex items-center justify-center min-h-screen bg-[#0d1117] leading-normal tracking-normal text-gray-100 z-10 relative">
-  <div class="max-w-4xl w-full p-6 glow-border rounded-lg backdrop-blur-sm z-10 relative">
-    <header class="mb-12 text-center">
-      <h1 class="text-4xl font-bold mb-4 text-teal-400 glow-text floating">🔐 Zach's Cybersecurity Journey</h1>
-      <p class="text-lg text-gray-300">
-        A hands-on path to CompTIA A+, Help Desk roles, and Cybersecurity.
+    <!-- Main Hero Section -->
+    <div class="max-w-4xl w-full p-6 glow-border rounded-lg backdrop-blur-sm bg-opacity-10 mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold text-center mb-4 text-teal-400">🚀 Zach's IT Help Desk & A+ Lab</h1>
+      <p class="text-lg text-center mb-6 text-gray-300">
+        Welcome! This is my personal IT home lab to document my hands-on journey toward CompTIA A+ certification
+        and remote help desk mastery.
       </p>
-      <a href="https://github.com/ZachCortez/CybersecurityJourney" class="inline-block mt-4 px-6 py-2 border border-teal-400 text-teal-400 glow-link rounded transition duration-200">
-        View on GitHub →
-      </a>
-    </header>
+      <ul class="list-disc list-inside space-y-2 text-gray-200">
+        <li>🛠️ Build real-world IT skills from scratch</li>
+        <li>💻 Practice using VirtualBox, Windows, Linux, and more</li>
+        <li>🔐 Prepare for CompTIA A+ Core 1 (220-1101) & Core 2 (220-1102)</li>
+        <li>🌐 Learn networking, security, OS management, and troubleshooting</li>
+      </ul>
+    </div>
 
-    <div class="glow-divider"></div>
+    <!-- README Instructions Section -->
+    <div class="max-w-4xl w-full p-6 glow-border rounded-lg backdrop-blur-sm bg-opacity-10">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 text-teal-300">📘 Getting Started with Zach's IT Home Lab</h2>
+      <div class="overflow-y-auto max-h-[70vh] text-sm md:text-base space-y-4 leading-relaxed text-gray-200">
+        <pre class="whitespace-pre-wrap font-mono text-gray-300">
+# 🧠 Zach's IT Home Lab Journey — A+ Certification & Help Desk Practice
 
-    <section class="space-y-8">
-      <div>
-        <h2 class="text-2xl font-semibold text-teal-300 glow-text">💡 About This Project</h2>
-        <p class="mt-2 text-gray-300">
-          This repo documents my self-taught, lab-driven approach to learning IT fundamentals and breaking into a cybersecurity career. From setting up VirtualBox environments to troubleshooting OS and network issues — this is my unfiltered journey.
-        </p>
+## Welcome to my personal IT home lab repository!
+
+This is a living, hands-on project where I document my journey toward earning the **CompTIA A+ certification**, building foundational IT skills, and landing a **remote Help Desk or IT Support role**.
+
+Whether you're a beginner like me or someone looking to break into tech without a degree, this repo is here to:  
+- 🛠️ Share **real-world labs and troubleshooting practice**  
+- 📚 Track **A+ Core 1 (220-1101) & Core 2 (220-1102)** objectives  
+- 🎯 Build skills around Windows, Linux, networking, security, virtualization, and more  
+- 💻 Get hands-on using free tools like VirtualBox and open-source OSes  
+
+---  
+
+## 🛠️ Step 1: Build a Hands-On IT Lab at Home (No Extra Cost)
+
+This is your playground to experiment, break stuff, fix it, and document the whole process.
+
+### 🧰 Your IT Home Lab Setup  
+You already have a laptop — that’s all you need to start:
+
+✅ Install VirtualBox or VMware Workstation Player (free)  
+✅ Download and install:  
+- Windows 10 ISO  
+- Ubuntu (Linux) ISO  
+- Optionally, Kali Linux (for security practice later)  
+
+... (truncated for brevity — full markdown continues) ...
+        </pre>
       </div>
-
-      <div>
-        <h2 class="text-2xl font-semibold text-teal-300 glow-text">🧪 Lab Environment</h2>
-        <ul class="list-disc ml-6 mt-2 text-gray-300">
-          <li>VirtualBox with Windows 10, Ubuntu, Kali Linux</li>
-          <li>Networking setup, CIFS/Samba file sharing</li>
-          <li>System troubleshooting, security scanning, VM isolation</li>
-          <li>Mapped to CompTIA A+ 220-1101 / 1102 objectives</li>
-        </ul>
-      </div>
-
-      <div>
-        <h2 class="text-2xl font-semibold text-teal-300 glow-text">🚀 Highlights</h2>
-        <ul class="list-disc ml-6 mt-2 text-gray-300">
-          <li>Step-by-step VM setup and file sharing</li>
-          <li>Lab journal documenting real issues and fixes</li>
-          <li>Plans to expand into Security+ and remote IT support tools</li>
-        </ul>
-      </div>
-
-      <div>
-        <h2 class="text-2xl font-semibold text-teal-300 glow-text">📫 Contact Me</h2>
-        <p class="mt-2 text-gray-300">
-          I'm actively learning and sharing. Let’s connect:
-        </p>
-        <ul class="mt-2 space-y-1">
-          <li><a href="https://www.linkedin.com/in/zach-cortez/" class="text-teal-400 hover:underline glow-link">LinkedIn</a></li>
-          <li><a href="mailto:Zach.Cortez@icloud.com" class="text-teal-400 hover:underline glow-link">Email Me</a></li>
-          <li><a href="https://github.com/ZachCortez" class="text-teal-400 hover:underline glow-link">GitHub Profile</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <footer class="mt-12 text-center text-sm text-gray-500">
-      Made with 🩵 by Zach Cortez • © 2025
-    </footer>
-  </div>
-</body>
+    </div>
+  </body>
 </html>
