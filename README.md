@@ -183,19 +183,11 @@ https://github.com/user-attachments/assets/58f19521-159b-4b87-b084-fb4a7c062128
 
 ## 🧪 Final Check  
 You should see the VirtualBox Manager window:  
+</br>
 
-```
+https://github.com/user-attachments/assets/a0035811-f37d-4ea3-97e4-3496da1e5d41
 
-+---------------------------------------+
-
-| VirtualBox Manager                        |
-| ----------------------------------------- |
-| \[ New ] \[ Settings ] \[ Start ]         |
-| ---------------------------------------   |
-| No virtual machines yet                   |
-| +---------------------------------------+ |
-
-````
+</br>
 
 From here, you're ready to install your first virtual machine.
 
