@@ -258,8 +258,15 @@ https://github.com/user-attachments/assets/c6a97231-f03a-40ff-90d6-3f51ed6367a9
 </br>
 
 3. Set Memory Size to 4096 MB (or at least 2048 MB)  
-4. Create a virtual hard disk now (64 GB recommended, VDI, dynamically allocated)  
-5. Click **Create**
+4. Create a virtual hard disk now (64 GB recommended, VDI, dynamically allocated)
+</br>
+
+
+https://github.com/user-attachments/assets/03e5d1ee-a031-484f-bb9e-cb4581997ab1
+
+
+</br>
+6. Click **Create**
 
 ---
 
@@ -268,12 +275,36 @@ https://github.com/user-attachments/assets/c6a97231-f03a-40ff-90d6-3f51ed6367a9
 1. Select your Windows VM  
 2. Click **Start**  
 3. Browse and select the downloaded `Windows10.iso`  
-4. Click **Start** and install Windows as usual  
+4. Click **Start** and install Windows as usual
+
+</br>
+
+
+https://github.com/user-attachments/assets/88f38e7f-9d45-4952-b83c-a10f02b5e939
+
+
+</br>
+
 - Choose "Custom install"  
 - Select unallocated disk  
-- Skip product key  
-- Optionally skip Microsoft account sign-in  
+- Skip product key
 
+</br>
+
+
+https://github.com/user-attachments/assets/e83b0dd8-b2a7-4f8e-9c33-6a0e35eb932d
+
+
+</br>
+
+- Optionally skip Microsoft account sign-in  
+</br>
+
+
+https://github.com/user-attachments/assets/bb9fedb6-476c-4691-b562-2adc9129c523
+
+
+</br>
 ---
 
 ## 🎉 Done! You now have a Windows 10 VM to break, fix, and experiment in.
