@@ -256,6 +256,7 @@ https://github.com/user-attachments/assets/c6a97231-f03a-40ff-90d6-3f51ed6367a9
 
 
 </br>
+
 3. Set Memory Size to 4096 MB (or at least 2048 MB)  
 4. Create a virtual hard disk now (64 GB recommended, VDI, dynamically allocated)  
 5. Click **Create**
