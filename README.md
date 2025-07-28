@@ -217,20 +217,25 @@ Scroll to:
 
 Run the tool:  
 - Accept license  
-- Choose **Create installation media (USB flash drive, DVD, or ISO file)**  
-- Select defaults (English, Windows 10, 64-bit)  
-- Choose **ISO file** and save it.
+- Choose **Create installation media (USB flash drive, DVD, or ISO file)**
 </br>
-
-
 
 
 https://github.com/user-attachments/assets/b773997d-7ba3-48ac-a4c5-15aa9a3250e8
 
 
+</br>
+
+- Select defaults (English, Windows 10, 64-bit)  
+- Choose **ISO file** and save it.
+</br>
+
+
+https://github.com/user-attachments/assets/d5cb462a-7dde-46b2-aa57-8ee2794b94c0
 
 
 </br>
+
 ---
 
 ## ✅ Step 2: Create a Windows 10 VM in VirtualBox
