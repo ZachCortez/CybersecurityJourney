@@ -239,9 +239,23 @@ https://github.com/user-attachments/assets/d5cb462a-7dde-46b2-aa57-8ee2794b94c0
 ---
 
 ## ✅ Step 2: Create a Windows 10 VM in VirtualBox
+</br>
+
+
+https://github.com/user-attachments/assets/725a6a98-f8c1-4b47-a0d1-167a95fd340c
+
+
+</br>
 
 1. Open VirtualBox, click **New**  
 2. Name: `Windows 10`, Type: `Microsoft Windows`, Version: `Windows 10 (64-bit)`  
+</br>
+
+
+https://github.com/user-attachments/assets/c6a97231-f03a-40ff-90d6-3f51ed6367a9
+
+
+</br>
 3. Set Memory Size to 4096 MB (or at least 2048 MB)  
 4. Create a virtual hard disk now (64 GB recommended, VDI, dynamically allocated)  
 5. Click **Create**
