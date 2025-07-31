@@ -266,6 +266,7 @@ https://github.com/user-attachments/assets/03e5d1ee-a031-484f-bb9e-cb4581997ab1
 
 
 </br>
+
 6. Click **Create**
 
 ---
@@ -305,6 +306,7 @@ https://github.com/user-attachments/assets/bb9fedb6-476c-4691-b562-2adc9129c523
 
 
 </br>
+
 ---
 
 ## 🎉 Done! You now have a Windows 10 VM to break, fix, and experiment in.
@@ -315,12 +317,42 @@ https://github.com/user-attachments/assets/bb9fedb6-476c-4691-b562-2adc9129c523
 
 Follow similar steps:  
 
-- Download Ubuntu 22.04.4 LTS ISO from [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop)  
-- Create VM in VirtualBox: Name it `Ubuntu 22.04`, Type `Linux`, Version `Ubuntu (64-bit)`  
+- Download Ubuntu 22.04.4 LTS ISO from [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop)
+
+</br>
+
+
+https://github.com/user-attachments/assets/9fce6715-6707-44b9-8242-6df0a87ad29f
+
+
+</br>
+
+- Create VM in VirtualBox: Name it `Ubuntu 22.04`, Type `Linux`, Version `Ubuntu (64-bit)`
+
+</br>
+
+
+https://github.com/user-attachments/assets/c69b8de4-bfcc-4e8b-9b6c-215f0c453cec
+
+
+</br>
+
 - Memory: 4096 MB (minimum 2048 MB)  
-- Create virtual disk: 32 GB+, VDI, dynamically allocated  
-- Mount ISO, start VM, and run installation  
-- Choose normal installation + 3rd party drivers  
+- Create virtual disk: 32 GB+, VDI, dynamically allocated
+- Mount ISO, start VM, and run installation
+
+</br>
+
+
+https://github.com/user-attachments/assets/3ec1f4d3-d0ae-4396-b480-226afd608cd4
+
+
+</br>
+  
+- Choose normal installation + 3rd party drivers
+
+
+
 - Select erase disk (safe inside VM)  
 - Setup user and password  
 
