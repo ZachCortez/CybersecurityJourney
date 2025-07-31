@@ -339,7 +339,6 @@ https://github.com/user-attachments/assets/c69b8de4-bfcc-4e8b-9b6c-215f0c453cec
 
 - Memory: 4096 MB (minimum 2048 MB)  
 - Create virtual disk: 32 GB+, VDI, dynamically allocated
-- Mount ISO, start VM, and run installation
 
 </br>
 
@@ -348,10 +347,27 @@ https://github.com/user-attachments/assets/3ec1f4d3-d0ae-4396-b480-226afd608cd4
 
 
 </br>
+
+- Mount ISO, start VM, and run installation
+
+</br>
+
+
+https://github.com/user-attachments/assets/563c06ee-db7b-4081-8bc6-ba367f845c51
+
+
+</br>
+
   
 - Choose normal installation + 3rd party drivers
 
+</br>
 
+
+https://github.com/user-attachments/assets/9ed0de0f-5931-407c-8cd0-25db39665334
+
+
+</br>
 
 - Select erase disk (safe inside VM)  
 - Setup user and password  
