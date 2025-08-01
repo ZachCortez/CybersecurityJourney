@@ -376,6 +376,14 @@ https://github.com/user-attachments/assets/9ed0de0f-5931-407c-8cd0-25db39665334
 
 ## ✅ Step 5: Setup Kali Linux (Optional for Cybersecurity)
 
+</br>
+
+
+https://github.com/user-attachments/assets/fec4bed8-522f-4c03-8982-2802cd716e38
+
+
+</br>
+
 - Download Kali Linux VirtualBox prebuilt image from https://www.kali.org/get-kali/#kali-platforms  
 - Extract `.7z` file with 7-Zip  
 - Import `.ova` or `.vbox` file into VirtualBox  
